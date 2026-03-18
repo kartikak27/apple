@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>NESTED TABLE WITH IMAGE</title>
+<style>
+table{
+border-collapse: collapse;
+}
+table,th,td {
+border:1px solid black;
+padding:8px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>MAIN TABLE</h2>
+<table width="70%">
+<tr>
+<th>EMPLOYEE ID </th>
+<th>EMPLOYEE DETAILS</th>
+<th>PHOTO</th>
+</tr>
+<tr>
+<td>101</td>
+<!--TABLE WITHIN TABLE-->
+<td>
+<table width="100%">
+<tr>
+<th>NAME</th>
+<th>DEPARTMENT</th>
+</tr>
+<tr>
+<td>PRAPTI</td>
+<td>DATA SCIENCE</td>
+</tr>
+</table>
+</td>
+<!--IMAGE INSIDE TABLE DATA-->
+<td>
+<img scr="https://img.freepik.com/free-vector/woman-with-long-brown-hair-pink-shirt_90220-2940.jpg"alt="employee photo"width="80"height="80">
+</td>
+</tr>
+</table>
+</body>
+</html>
