@@ -1,36 +1,49 @@
-Body{
-Background-color:#f2f2f2;
-Font-family:Arial,sans-serief;
-Text-align:center;
-padding:50px;
-}
-h1{
-color:#333;
-border:2px solid black;
-display: inline-block;
-padding: 10px 20px;
-background- color:white;
-}
-p{ 
-font-size:18px;
-color:#555;
-width:70%;
-margin: 20ox auto;
-background-color :white;
-padding:15px;
-border-radius: 10px;
-}
-button{
-padding:12px 25px;
-font-size:16px;
-border:none;
-background-color:black;
-color:white;
-border-radius: 8px;
-cursor:pointer;
-}
-button:hover{
-background-color:#444;
-}
 
 
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>NESTED TABLE WITH IMAGE</title>
+<style>
+table{
+border-collapse: collapse;
+}
+table,th,td {
+border:1px solid black;
+padding:8px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>MAIN TABLE</h2>
+<table width="70%">
+<tr>
+<th>EMPLOYEE ID </th>
+<th>EMPLOYEE DETAILS</th>
+<th>PHOTO</th>
+</tr>
+<tr>
+<td>101</td>
+<!--TABLE WITHIN TABLE-->
+<td>
+<table width="100%">
+<tr>
+<th>NAME</th>
+<th>DEPARTMENT</th>
+</tr>
+<tr>
+<td>PRAPTI</td>
+<td>DATA SCIENCE</td>
+</tr>
+</table>
+</td>
+<!--IMAGE INSIDE TABLE DATA-->
+<td>
+<img scr="https://img.freepik.com/free-vector/woman-with-long-brown-hair-pink-shirt_90220-2940.jpg"alt="employee photo"width="80"height="80">
+</td>
+</tr>
+</table>
+</body>
+</html
